@@ -1,14 +1,73 @@
 <nav class="navbar">
-  <div class="logo">
-    <a href=""><span>iN4P</span></a>
+  <div class="navbar-container">
+    <div class="navbar-left">
+      <div class="hamburger-menu" (click)="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <a (click)="toggleMenu()" class="aLogo" href="">
+        <img src="https://i.pinimg.com/originals/7b/31/b6/7b31b6f72984ed8dc458d64ffed7c2f7.png" alt="" style="width: 70%;">
+      </a>
+
+    </div>
+    <div class="navbar-center">
+      <div class="dropdown">
+        <button class="dropbtn">América
+
+        </button>
+        <div class="dropdown-content">
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">África
+
+        </button>
+        <div class="dropdown-content">
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Asia</button>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Europa</button>
+      </div>
+    </div>
+    <div class="navbar-right">
+
+
+    </div>
+
   </div>
-  <div class="continente">
-    <a href="">América</a>
-    <a href="">Europa</a>
-    <a href="">África</a>
-    <a href="asia">Asia</a>
+
+  <div class="sidebar" [ngClass]="{'show': showMenu}">
+    <div class="sidebar-icon">
+      <a (click)="toggleMenu()">X</a>
+    </div>
+    <div class="sidebar-family">
+      <a (click)="selecction = 1">América</a>
+      <a (click)="selecction = 2">África</a>
+      <a (click)="selecction = 3">Asia</a>
+      <a (click)="selecction = 4">Europa</a>
+    </div>
+    <div class="sidebar-info">
+      <div *ngIf="selecction === 1">
+       </div>
+      <div *ngIf="selecction === 2">
+      </div>
+      <div *ngIf="selecction === 3">
+        <a href="asia">Ver todos</a>
+        <a href="phumduang">Phung Duang</a>
+      </div>
+      <div *ngIf="selecction === 4">
+       </div>
+
+
+    </div>
+
+
   </div>
-  <div class="otros">
-    <a href="">Peces</a>
-  </div>
+
 </nav>

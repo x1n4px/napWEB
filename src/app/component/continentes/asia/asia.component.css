@@ -1,24 +1,21 @@
 .container {
-  height: 90vh;
+  height: auto;
   background-color: #1E1E1E;
   padding-top: 50px;
   display: flex;
   justify-content: center;
-}
+  margin-top: 10vh;
+ }
 
 .interno {
   display: flex;
   width: 80%;
   justify-content: center;
-}
+ }
 
 .cards {
   height: 1000px;
   width: 80%;
-
-
-
-
 }
 
 .cards a{
@@ -40,4 +37,24 @@
 
 .cards img {
   width: 100%;
+ }
+
+
+ @media(max-width: 768px) {
+  .interno {
+    width: 100%;
+    padding: 10px;
+   }
+
+  .cards {
+    width: 100%;
+
+  }
+
+  .cards a {
+    font-size: 1.4em;
+  }
+  #nombre {
+    font-size: 1.7em;
+  }
  }
