@@ -1,0 +1,57 @@
+.navbar {
+  height: 10vh;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 20%;
+  height: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 3em;
+  color: #006fff;
+}
+
+.continente {
+  flex: 60%;
+  height: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otros {
+  flex: 20%;
+}
+
+.navbar a {
+  margin: 30px;
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 2em;
+  font-family: 'Times New Roman', Times, serif;
+  transition: filter 0.3s;
+}
+
+.navbar a:hover {
+  border-bottom: #006fff 3px solid;
+  color: #006fff;
+  filter: brightness(1);
+}
+
+@media (max-width: 768px) {
+  .continente{
+    display: none;
+  }
+
+  .otros{
+    display: none;
+  }
+}

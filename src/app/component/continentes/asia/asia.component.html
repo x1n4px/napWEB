@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="interno">
+    <div class="cards" *ngFor="let card of biotopos">
+      <a href="phumduang">
+        <img [src]="card.imagen" alt="">
+        <span id="nombre">{{card.nombre}}</span>
+        <span>{{card.provincia}}, {{card.pais}}</span>
+      </a>
+
+    </div>
+  </div>
+</div>
