@@ -12,7 +12,8 @@ export class AsiaComponent {
       nombre: 'Phum Duang',
       provincia: 'Surat Thani',
       pais: 'Sur de Thailandia',
-      imagen: 'https://i.imgur.com/HLip7Z9.jpg'
+      imagen: 'https://i.imgur.com/HLip7Z9.jpg',
+      anio: '2023'
     }
   ]
 }

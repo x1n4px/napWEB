@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./africa.component.css']
 })
 export class AfricaComponent {
-
+  biotopos = [
+    {
+      nombre: 'Kolenté',
+      provincia: 'Kolenté',
+      pais: 'Guinea',
+      imagen: '',
+      anio: '2023'
+    },
+    {
+      nombre: 'Kolenté',
+      provincia: 'Kolenté',
+      pais: 'Guinea',
+      imagen: '',
+      anio: '2023'
+    }
+  ]
 }
