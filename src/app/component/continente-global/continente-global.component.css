@@ -17,8 +17,8 @@
 }
 
 .cards {
-  height: 700px;
-  width: 1000px;
+  height: 850px;
+  width: 1200px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -41,15 +41,20 @@
   text-decoration: none;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 #nombre {
   font-size: 3em;
 }
 
-.cards img {
-  width: 1000px;
-  height: 500px;
+.imageInfo {
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -61,7 +66,7 @@
 
   .cards {
     width: 100%;
-
+    height: 400px;
   }
 
   .cards a {

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="interno">
+    <div class="cards" *ngFor="let card of biotopos">
+      <a [href]="card.href"
+        style="
+          background-image: url('{{card.imagen}}');
+          width: 100%; height:80%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        ">
+        <div class="imageInfo">
+          <span id="nombre">{{card.nombre}}</span>
+          <span>{{card.provincia}}, {{card.pais}}</span>
+        </div>
+
+
+      </a>
+      <div class="tag">
+        <span>{{card.anio}}</span>
+      </div>
+    </div>
+  </div>
+</div>

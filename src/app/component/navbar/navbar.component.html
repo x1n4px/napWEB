@@ -13,7 +13,7 @@
     </div>
     <div class="navbar-center">
       <div class="dropdown">
-        <a href="america" class="dropbtn">América
+        <a (click)="ir('America')" class="dropbtn">América
 
         </a>
         <div class="dropdown-content">
@@ -21,14 +21,14 @@
         </div>
       </div>
       <div class="dropdown">
-        <a href="africa" class="dropbtn">África
+        <a (click)="ir('Africa')" class="dropbtn">África
 
         </a>
         <div class="dropdown-content">
         </div>
       </div>
       <div class="dropdown">
-        <a href="asia" class="dropbtn">Asia</a>
+        <a (click)="ir('Asia')" class="dropbtn">Asia</a>
       </div>
 
       <div class="dropdown">
@@ -48,28 +48,35 @@
       <a (click)="toggleMenu()">X</a>
     </div>
     <div class="sidebar-family">
-      <a (click)="selecction = 1">América</a>
-      <a (click)="selecction = 2">África</a>
-      <a (click)="selecction = 3">Asia</a>
-      <a (click)="selecction = 4">Europa</a>
+      <a (click)="selecction = 1; filtrado('America')">América</a>
+      <a (click)="selecction = 2; filtrado('Africa')">África</a>
+      <a (click)="selecction = 3;filtrado('Asia')">Asia</a>
+      <a (click)="selecction = 4; filtrado('Europa')">Europa</a>
     </div>
     <div class="sidebar-info">
       <div *ngIf="selecction === 1">
-        <a href="america">Ver todos</a>
-        <a href="">Manacapuru</a>
-        <a href="">Rio negro </a>
-        <a href="">Rio negro</a>
+        <a (click)="ir('America')">Ver todos</a>
+        <div *ngFor="let bio of biotopes">
+          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+        </div>
        </div>
       <div *ngIf="selecction === 2">
-        <a href="africa">Ver todos</a>
-        <a href="">Kolenté</a>
-        <a href="">Kolenté</a>
+        <a (click)="ir('Africa')">Ver todos</a>
+        <div *ngFor="let bio of biotopes">
+          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+        </div>
       </div>
       <div *ngIf="selecction === 3">
-        <a href="asia">Ver todos</a>
-        <a href="phumduang">Phung Duang</a>
+        <a (click)="ir('Asia')">Ver todos</a>
+        <div *ngFor="let bio of biotopes">
+          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+        </div>
       </div>
       <div *ngIf="selecction === 4">
+        <a (click)="ir('Europa')">Ver todos</a>
+        <div *ngFor="let bio of biotopes">
+          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+        </div>
        </div>
 
 
