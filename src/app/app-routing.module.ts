@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'continente/:nombre', component: ContinenteGlobalComponent,
 
   },
-  { path: 'manacapuru', component: ManacapuruComponent}
+  { path: 'Manacapuru', component: ManacapuruComponent}
 ];
 
 @NgModule({

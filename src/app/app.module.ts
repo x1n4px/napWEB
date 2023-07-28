@@ -9,6 +9,7 @@ import { PecesComponent } from './component/otros/peces/peces.component';
 import { PhumduangComponent } from './component/biotopos/phumduang/phumduang.component';
 import { ContinenteGlobalComponent } from './component/continente-global/continente-global.component';
 import { ManacapuruComponent } from './component/biotopos/manacapuru/manacapuru.component';
+import { BiotopoPageComponent } from './component/biotopo-page/biotopo-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ManacapuruComponent } from './component/biotopos/manacapuru/manacapuru.
     PecesComponent,
     PhumduangComponent,
     ContinenteGlobalComponent,
-    ManacapuruComponent
+    ManacapuruComponent,
+    BiotopoPageComponent
   ],
   imports: [
     BrowserModule,
