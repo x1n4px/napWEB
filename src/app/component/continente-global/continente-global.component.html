@@ -1,7 +1,7 @@
 <div class="container">
   <div class="interno">
-    <div class="cards" *ngFor="let card of biotopos">
-      <a [href]="card.href"
+    <div class="cards" *ngFor="let card of biotopos" >
+      <a *ngIf="card.imagen" [routerLink]="['/continente/', continente, card.href]"
         style="
           background-image: url('{{card.imagen}}');
           width: 100%; height:80%;
@@ -16,7 +16,7 @@
 
 
       </a>
-      <div class="tag">
+      <div class="tag" *ngIf="card.imagen">
         <span>{{card.anio}}</span>
       </div>
     </div>

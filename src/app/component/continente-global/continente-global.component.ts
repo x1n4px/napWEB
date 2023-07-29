@@ -23,7 +23,7 @@ export class ContinenteGlobalComponent {
     this.route.paramMap.subscribe(params => {
       let cont = params.get('nombre');
       this.biotopos = this.biotopeService.devolverListado(cont);
-
+      this.continente = cont? cont: '';
     })
 
 

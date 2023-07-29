@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
- import { PhumduangComponent } from './component/biotopos/phumduang/phumduang.component';
  import { ContinenteGlobalComponent } from './component/continente-global/continente-global.component';
-import { ManacapuruComponent } from './component/biotopos/manacapuru/manacapuru.component';
+ import { BiotopoPageComponent } from './component/biotopo-page/biotopo-page.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent
   },
-  { path: 'phumduang', component: PhumduangComponent },
-  {
-    path: 'continente/:nombre', component: ContinenteGlobalComponent,
-
+   {
+    path: 'continente/:nombre', component: ContinenteGlobalComponent
   },
-  { path: 'Manacapuru', component: ManacapuruComponent}
+  { path: 'continente/:nombre/:biotopos', component: BiotopoPageComponent },
+   { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

@@ -1,1 +1,245 @@
-<p>biotopo-page works!</p>
+
+<div class="container">
+
+  <div class="interno">
+    <div id="a1image"><img [src]="biotope.page.header_img" alt=""></div>
+
+    <section id="bin">
+      <div class="header">
+        <h1>{{biotope.page.header_name}}</h1>
+      </div>
+      <div class="columnContainer">
+        <div class="c1">
+          <table>
+            <tbody>
+              <tr>
+                <th>{{biotope.page.full_name}}</th>
+              </tr>
+              <tr>
+                <th>{{biotope.page.biotope_recreate}}</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="c2">
+          <table>
+            <tbody>
+              <tr>
+                <th>GPS</th>
+                <th>
+                  {{biotope.page.gps}}</th>
+              </tr>
+            </tbody>
+          </table>
+          <div class="imgContainerGPS">
+            <img [src]="biotope.page.gps_img" alt="">
+          </div>
+        </div>
+        <div class="c3">
+          <table>
+            <tbody>
+              <tr>
+                <th id="left">Geographic al region</th>
+                <th>{{biotope.page.geographic_region}}</th>
+              </tr>
+              <tr>
+                <th id="left">Drainage Basin</th>
+                <th>{{biotope.page.drainage_basin}}</th>
+              </tr>
+              <tr>
+                <th id="left">River catchment</th>
+                <th>{{biotope.page.river_carchment}}</th>
+              </tr>
+              <tr>
+                <th id="left">Water body type</th>
+                <th>{{biotope.page.water_body.water_body_type}}</th>
+              </tr>
+              <tr>
+                <th id="left">Water body name</th>
+                <th>{{biotope.page.water_body.water_body_name}}</th>
+              </tr>
+              <tr>
+                <th id="left">Water body part</th>
+                <th>{{biotope.page.water_body.water_body_part}}</th>
+              </tr>
+              <tr>
+                <th id="left">Water body course</th>
+                <th>{{biotope.page.water_body.water_body_course}}</th>
+              </tr>
+              <tr>
+                <th id="left">Water body tributary of</th>
+                <th>{{biotope.page.water_body.water_body_tributary}}</th>
+              </tr>
+              <tr>
+                <th id="left">Tributary name</th>
+                <th>{{biotope.page.water_body.water_body_tributary_name}}</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="a0" *ngIf="biotope.page.youtube_url">
+      <a [href]="biotope.page.youtube_url" target="_blank">
+        <h1 >Puedes ver el video pinchando encima!</h1>
+        <img
+          [src]="biotope.page.youtube_img_url"
+          alt="">
+      </a>
+    </section>
+
+
+    <section id="a1">
+
+      <p>{{biotope.page.river_info}}</p>
+    </section>
+    <section id="a2">
+      <p>{{biotope.page.aquarium.aquarium_info}}</p>
+    </section>
+
+    <section class="inforAquarium">
+      <div class="encabezado">
+        <h1>Información del acuario</h1>
+      </div>
+      <div class="columnas-container">
+        <div class="columna" id="columnaA1">
+          <h2>Descripción del acuario</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td id="left">Fecha de montaje</td>
+                <td>{{biotope.page.aquarium.aquarium_date}}</td>
+              </tr>
+              <tr>
+                <td id="left">Decoración del acuario</td>
+                <td>{{biotope.page.aquarium.aquarium_decoration}}</td>
+              </tr>
+              <tr>
+                <td id="left">Equipamiento</td>
+                <td>{{biotope.page.aquarium.aquarium_tech}}</td>
+              </tr>
+              <tr>
+                <td id="left">Cuidado de los peces</td>
+                <td>{{biotope.page.aquarium.aquarium_fish_care}}</td>
+              </tr>
+              <tr>
+                <td id="left">Peces</td>
+                <td>{{biotope.page.aquarium.aquarium_fish}}</td>
+              </tr>
+              <tr>
+                <td id="left">Plantas</td>
+                <td>{{biotope.page.aquarium.aquarium_plants}}</td>
+              </tr>
+              <tr>
+                <td id="left">Botanicos</td>
+                <td>{{biotope.page.aquarium.aquarium_botanics}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="columna" id="columnaA2">
+          <h2>Dimensiones</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td id="left">Longitud</td>
+                <td>{{biotope.page.aquarium.aquarium_length}}</td>
+              </tr>
+              <tr>
+                <td id="left">Profuncidad</td>
+                <td>{{biotope.page.aquarium.aquarium_depth}}</td>
+              </tr>
+              <tr>
+                <td id="left">Altura</td>
+                <td>{{biotope.page.aquarium.aquarium_height}}</td>
+              </tr>
+              <tr>
+                <td id="left">Volumen</td>
+                <td>{{biotope.page.aquarium.aquarium_volume}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="inforAquarium">
+      <div class="encabezado">
+        <h1>Química del agua</h1>
+      </div>
+      <div class="columnas-container">
+        <div class="columna">
+          <h2>Información del agua</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td id="left">Tipo de agua</td>
+                <td>{{biotope.page.water.water_type}}</td>
+              </tr>
+              <tr>
+                <td id="left">Color del agua</td>
+                <td>{{biotope.page.water.water_color}}</td>
+              </tr>
+              <tr>
+                <td id="left">Transparencia del agua</td>
+                <td>{{biotope.page.water.water_transparency}}</td>
+              </tr>
+              <tr>
+                <td id="left" [width]="30">Concentración de sedimentos</td>
+                <td>{{biotope.page.water.water_sediment}}</td>
+              </tr>
+              <tr>
+                <td id="left">Temperatura del agua</td>
+                <td> {{biotope.page.water.water_temperature}}</td>
+              </tr>
+              <tr>
+                <td id="left">Flujo de agua</td>
+                <td>{{biotope.page.water.water_flow}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="columna">
+          <h2>Parámetros del agua</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td id="left">pH</td>
+                <td>{{biotope.page.water.water_ph}}</td>
+              </tr>
+              <tr>
+                <td id="left">Conducitividad</td>
+                <td>{{biotope.page.water.water_conductivity}}</td>
+              </tr>
+              <tr>
+                <td id="left">GH</td>
+                <td>{{biotope.page.water.water_gh}}</td>
+              </tr>
+              <tr>
+                <td id="left">KH</td>
+                <td>{{biotope.page.water.water_kh}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="img" *ngFor="let key of getAlternativeImageKeys()">
+      <img [src]="biotope.page.alternative_img[key]" alt="Imagen">
+
+
+    </div>
+  </div>
+</div>

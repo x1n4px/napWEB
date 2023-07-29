@@ -6,10 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { PecesComponent } from './component/otros/peces/peces.component';
-import { PhumduangComponent } from './component/biotopos/phumduang/phumduang.component';
-import { ContinenteGlobalComponent } from './component/continente-global/continente-global.component';
-import { ManacapuruComponent } from './component/biotopos/manacapuru/manacapuru.component';
-import { BiotopoPageComponent } from './component/biotopo-page/biotopo-page.component';
+ import { ContinenteGlobalComponent } from './component/continente-global/continente-global.component';
+ import { BiotopoPageComponent } from './component/biotopo-page/biotopo-page.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +15,8 @@ import { BiotopoPageComponent } from './component/biotopo-page/biotopo-page.comp
     HomeComponent,
     NavbarComponent,
     PecesComponent,
-    PhumduangComponent,
-    ContinenteGlobalComponent,
-    ManacapuruComponent,
-    BiotopoPageComponent
+     ContinenteGlobalComponent,
+     BiotopoPageComponent
   ],
   imports: [
     BrowserModule,
