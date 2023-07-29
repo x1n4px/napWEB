@@ -57,25 +57,25 @@
       <div *ngIf="selecction === 1">
         <a (click)="ir('America')">Ver todos</a>
         <div *ngFor="let bio of biotopes">
-          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+          <a [routerLink]="['/continente/', bio.continente, bio.href]" (click)="toggleMenu()">{{bio.nombre}} - {{bio.anio}}</a>
         </div>
        </div>
       <div *ngIf="selecction === 2">
         <a (click)="ir('Africa')">Ver todos</a>
         <div *ngFor="let bio of biotopes">
-          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+          <a [routerLink]="['/continente/', bio.continente, bio.href]" (click)="toggleMenu()" >{{bio.nombre}} - {{bio.anio}}</a>
         </div>
       </div>
       <div *ngIf="selecction === 3">
         <a (click)="ir('Asia')">Ver todos</a>
         <div *ngFor="let bio of biotopes">
-          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+          <a [routerLink]="['/continente/', bio.continente, bio.href]" (click)="toggleMenu()">{{bio.nombre}} - {{bio.anio}}</a>
         </div>
       </div>
       <div *ngIf="selecction === 4">
         <a (click)="ir('Europa')">Ver todos</a>
         <div *ngFor="let bio of biotopes">
-          <a href="{{bio.href}}">{{bio.nombre}} - {{bio.anio}}</a>
+          <a [routerLink]="['/continente/', bio.continente, bio.href]" (click)="toggleMenu()">{{bio.nombre}} - {{bio.anio}}</a>
         </div>
        </div>
 
